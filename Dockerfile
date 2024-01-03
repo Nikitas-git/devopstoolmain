@@ -1,4 +1,4 @@
 FROM openjdk:8
 EXPOSE 8080
-ADD target/devopstool.jar devopstool.jar
+ADD /var/lib/jenkins/workspace/trivy/target/devopstool.war devopstool.war
 ENTRYPOINT ["java","-jar","/devopstool.jar"]
